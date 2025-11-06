@@ -32,22 +32,22 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Form */}
-          <div>
+          <div className='md:px-12'>
             {/* Header */}
             <div className="mb-12">
               <div className="flex items-center gap-2 mb-6">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
                 <span className="text-sm font-medium text-white/80">Contact us</span>
               </div>
-              <h2 className="text-5xl md:text-6xl font-serif text-white leading-tight">
-                Get in touch with our<br />experts team
+              <h2 className="font-hedvig text-[38px] md:text-4xl text-white leading-tight max-w-sm">
+                Get in touch with our experts team
               </h2>
             </div>
 
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Row 1: Full Name and Email */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-6">
                 <div>
                   <input
                     type="text"
@@ -73,7 +73,7 @@ export default function ContactSection() {
               </div>
 
               {/* Row 2: Date and Service */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-6">
                 <div>
                   <input
                     type="date"
@@ -144,12 +144,12 @@ export default function ContactSection() {
               <div>
                 <button
                   type="submit"
-                  className=" bg-teal-800/50 border border-teal-700/50 rounded-full text-white font-semibold py-2 px-4  hover:bg-gray-100 transition-colors text-lg"
+                  className="inline-flex items-center gap-3 bg-teal-800 text-white font-semibold pl-6 pr-2 py-2 rounded-full hover:bg-teal-900 transition-colors text-base"
                 >
-                 submit your form
+                  <span>Submit your Form</span>
                   <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-[#1f514c]">
-              <ArrowRight size={20} strokeWidth={2.5} />
-            </span>
+                    <ArrowRight size={20} strokeWidth={2.5} />
+                  </span>
                 </button>
               </div>
             </form>
@@ -167,8 +167,6 @@ export default function ContactSection() {
           </div>
         </div>
       </div>
-
-  
     </section>
   );
 }

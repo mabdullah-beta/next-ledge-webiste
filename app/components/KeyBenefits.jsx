@@ -51,7 +51,7 @@ export default function KeyBenefits() {
             <div className="w-2 h-2 bg-teal-700 rounded-full"></div>
             <span className="text-sm font-medium text-gray-600">Features</span>
           </div>
-          <h2 className="max-w-2xl text-[38px] md:text-[45px]  text-gray-900 leading-tight  mx-auto">
+          <h2 className="font-hedvig max-w-2xl text-[38px] md:text-[45px]  text-gray-900 leading-tight  mx-auto">
             Key benefits that set us apart from other ferns
           </h2>
         </div>

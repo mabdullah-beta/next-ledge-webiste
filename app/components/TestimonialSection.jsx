@@ -10,7 +10,7 @@ export default function TestimonialSection() {
         {/* Star Rating */}
         <div className="flex items-center justify-center gap-1 mb-8">
           {[1, 2, 3, 4, 5].map((star) => (
-            <Star key={star} className="w-6 h-6 fill-black text-black" />
+            <Star key={star} className="w-5 h-5 fill-black text-black" />
           ))}
           <span className="ml-3 text-lg font-normal text-gray-900">
             Rated 4.9/5

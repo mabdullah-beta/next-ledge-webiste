@@ -53,7 +53,7 @@ export default function PricingPlans() {
            <div className="w-2 h-2 bg-teal-700 rounded-full"></div>
             <span className="text-sm font-medium text-gray-600">Pricing</span>
           </div>
-          <h2 className="text-[38px] md:text-[45px]  text-gray-900  mx-auto max-w-xl">
+          <h2 className=" font-hedvig text-[35px] md:text-[45px]  text-gray-900  mx-auto max-w-2xl">
             Flexible pricing tailored to your business needs
           </h2>
         </div>
@@ -75,7 +75,7 @@ export default function PricingPlans() {
                 <div className="p-8 pb-6">
                   {/* Title and Popular Badge */}
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-[28px] font-semibold text-gray-900">
+                    <h3 className="md:text-[28px] text-[24px] font-semibold text-gray-900">
                       {plan.name}
                     </h3>
                     {plan.isPopular && (
@@ -87,13 +87,13 @@ export default function PricingPlans() {
                   </div>
 
                   {/* Description */}
-                  <p className="text-gray-700 text-[18px] mb-5 leading-relaxed">
+                  <p className=" text-gray-700 text-[18px] mb-5 leading-relaxed antialiased">
                     {plan.description}
                   </p>
 
                   {/* Price */}
-                  <div className="flex items-baseline mb-6">
-                    <span className="text-6xl font-bold text-gray-900">
+                  <div className=" flex items-baseline mb-6">
+                    <span className="font-hedvig  text-[35px] md:text-[45px]  font-bold text-gray-900">
                       {plan.price}
                     </span>
                     <span className="text-xl text-gray-600 ml-2">
@@ -103,7 +103,7 @@ export default function PricingPlans() {
 
                   {/* CTA Button */}
                   <button 
-                    className={`w-full py-3 px-4 rounded-full text-base font-semibold transition-all duration-200 ${plan.buttonStyle}`}
+                    className={`w-full py-2.5 px-4 rounded-full text-base font-semibold transition-all duration-200 ${plan.buttonStyle}`}
                   >
                     {plan.buttonText}
                   </button>
@@ -115,7 +115,7 @@ export default function PricingPlans() {
                     {plan.features.map((feature, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                        <span className="text-gray-700 text-base">
+                        <span className="text-gray-700 text-base antialiased">
                           {feature}
                         </span>
                       </li>

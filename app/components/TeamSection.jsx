@@ -115,7 +115,7 @@ export default function TeamSection() {
   };
 
   return (
-    <section ref={sectionRef} className="w-full bg-white py-20 md:py-20 sm:py-12 md:px-4">
+    <section ref={sectionRef} className="w-full bg-white py-10 md:py-20 sm:py-12 md:px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="font-hedvig text-center mb-16 md:mb-16 sm:mb-12">
@@ -167,10 +167,10 @@ export default function TeamSection() {
                     
                     {/* Text Content */}
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <h3 className="text-2xl font-semibold mb-1">
+                      <h3 className=" text-sm md:text-2xl font-semibold">
                         {member.name}
                       </h3>
-                      <p className="text-white/90 text-base">
+                      <p className="text-white/90 text-sm md:text-base ">
                         {member.title}
                       </p>
                     </div>

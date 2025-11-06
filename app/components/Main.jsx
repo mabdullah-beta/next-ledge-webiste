@@ -12,6 +12,7 @@ import ImpactSection from './ImpactSection'
 import TeamSection from './TeamSection'
 import FAQSection from './FAQSection'
 import ContactSection from './ContactSection'
+import Footer from './Footer'
 
 function Main() {
   return (
@@ -29,6 +30,7 @@ function Main() {
       <TeamSection/>
       <FAQSection/>
       <ContactSection/>
+      <Footer/>
     </div>
   )
 }
