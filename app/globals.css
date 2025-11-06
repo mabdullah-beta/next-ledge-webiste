@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-hedvig: var(--font-hedvig);
+  --font-inter: var(--font-inter);
+}
+
+.font-inter {
+  font-family: var(--font-inter) !important;
+  font-weight: 500;
+}
+
+.font-hedvig {
+  font-family: var(--font-hedvig) !important;
+  font-weight: 400;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Ensure main container doesn't overflow */
+#__next {
+  overflow-x: hidden;
+}
+
+/* Fix for sections that might cause overflow */
+section {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Ensure images and content don't cause overflow */
+img, 
+video, 
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix for mobile menu */
+@media (max-width: 768px) {
+  body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
