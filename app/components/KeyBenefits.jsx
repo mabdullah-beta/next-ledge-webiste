@@ -41,7 +41,7 @@ const benefits = [
   }
 ];
 
-export default function BenefitsSection() {
+export default function KeyBenefits() {
   return (
     <section className="w-full bg-white py-20 px-4">
       <div className="max-w-7xl mx-auto">

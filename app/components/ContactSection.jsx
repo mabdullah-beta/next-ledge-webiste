@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -143,9 +144,12 @@ export default function ContactSection() {
               <div>
                 <button
                   type="submit"
-                  className="w-full bg-white text-teal-900 font-semibold py-4 px-8 rounded-full hover:bg-gray-100 transition-colors text-lg"
+                  className=" bg-teal-800/50 border border-teal-700/50 rounded-full text-white font-semibold py-2 px-4  hover:bg-gray-100 transition-colors text-lg"
                 >
-                  Send Message
+                 submit your form
+                  <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-[#1f514c]">
+              <ArrowRight size={20} strokeWidth={2.5} />
+            </span>
                 </button>
               </div>
             </form>

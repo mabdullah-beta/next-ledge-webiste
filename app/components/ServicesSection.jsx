@@ -32,7 +32,7 @@ const services = [
   }
 ];
 
-export default function ServicesSlider() {
+export default function Slider() {
   const [currentIndex, setCurrentIndex] = useState(1);
 
   const handlePrevious = () => {
