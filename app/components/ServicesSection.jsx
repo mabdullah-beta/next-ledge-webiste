@@ -8,27 +8,33 @@ import { ChevronLeft, ArrowRight, ArrowLeft } from 'lucide-react';
 const services = [
   {
     id: 1,
-    title: 'Operational efficiency',
-    description: 'Streamline workflows and optimize processes to boost productivity and reduce costs.',
+    title: 'Accounting & Financial Administration',
+    description: 'Accurate, compliant, and always up to date. We handle your bookkeeping, VAT returns, annual reports, and all other administrative tasks with precision. But we go beyond the basics — helping you understand your numbers so you can see how healthy your business really is.',
     image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop'
   },
   {
     id: 2,
-    title: 'Market research & analysis',
-    description: 'Make informed decisions with in-depth market insights and competitor analysis.',
+    title: 'Automation & IT Integration',
+    description: 'Efficiency through smart technology. We analyse where automation and IT can simplify your financial processes, save time, and reduce manual work. Our focus is to help you stay up to date with developments in AI and digital tools — so your business runs smoother and becomes more data-driven.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop'
   },
   {
     id: 3,
-    title: 'Digital transformation',
-    description: 'Leverage cutting-edge technology to modernize your business and stay ahead.',
+    title: 'Financial Insights & Reporting',
+    description: 'Clarity that drives better decisions. We turn financial data into clear insights through visual reporting and performance dashboards. With the right information at the right time, you can monitor your business health and make decisions with confidence.',
     image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop'
   },
   {
     id: 4,
-    title: 'Strategic consulting',
-    description: 'Expert guidance to develop and execute winning business strategies.',
+    title: 'Budgeting & Forecasting',
+    description: 'Plan today with tomorrow in mind. We help you build realistic budgets, create financial forecasts, and explore different growth scenarios — so you\'re prepared for what\'s ahead.',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop'
+  },
+  {
+    id: 5,
+    title: 'Advisory & Business Support',
+    description: 'Your partner in every stage of growth. We work alongside you to analyse results, discuss challenges, and identify opportunities. Our goal is to give you the clarity and confidence to take the next step — backed by data, not guesswork.',
+    image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop'
   }
 ];
 
@@ -65,8 +71,8 @@ export default function Slider() {
       {/* Header */}
       <div className="text-center mb-16 md:mb-16 sm:mb-10">
         <div className="flex items-center justify-center gap-2 mb-6 md:mb-6 sm:mb-4">
-          <div className="w-2 h-2 bg-teal-600 rounded-full"></div>
-          <span className="font-inter text-sm font-medium text-[#1f514c]">Services</span>
+            <div className="w-2 h-2 bg-[#1f514c] rounded-full"></div>
+          <span className=" text-base font-semimedium text-[#1f514c]14c]">Services</span>
         </div>
         <h1 className="font-hedvig text-[38px] md:text-[45px] sm:text-[32px]  text-gray-900 leading-tight max-w-4xl mx-auto px-4">
           Reliable expertise to drive your<br className="hidden md:block" /> greatest success
@@ -143,8 +149,8 @@ export default function Slider() {
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                <h3 className="text-3xl font-semibold mb-3">{cards.center.title}</h3>
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 className="text-2xl font-semibold mb-3">{cards.center.title}</h3>
                 <p className="text-gray-200 text-sm leading-relaxed">{cards.center.description}</p>
               </div>
             </div>
@@ -179,7 +185,7 @@ export default function Slider() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-semibold mb-2">{cards.right.title}</h3>
+                <h3 className="text-xl font-semibold mb-1">{cards.right.title}</h3>
                 <p className="text-gray-200 text-xs leading-relaxed">{cards.right.description}</p>
               </div>
             </div>

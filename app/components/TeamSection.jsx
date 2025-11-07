@@ -173,10 +173,10 @@ export default function TeamSection() {
                     
                     {/* Text Content */}
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <h3 className=" text-sm md:text-2xl font-semibold">
+                      <h3 className=" text-sm md:text-xl font-semibold">
                         {member.name}
                       </h3>
-                      <p className="text-white/90 text-sm md:text-base ">
+                      <p className="text-white/80 text-sm md:text-base ">
                         {member.title}
                       </p>
                     </div>

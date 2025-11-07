@@ -18,7 +18,7 @@ const Hero = () => {
       className="relative pt-20 pb-10 md:pt-[90px] md:pb-20 sm:pt-[90px] sm:pb-10 bg-white"
       aria-label="Hero Section"
     >
-      <div className="max-w-full mx-auto px-5 md:px-32 sm:px-5">
+      <div className="max-w-full mx-auto px-5 md:px-30 sm:px-5">
         <div
           className={`relative bg-[#1f514c] rounded-4xl md:rounded-4xl sm:rounded-3xl overflow-hidden transition-all duration-1000 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -47,20 +47,20 @@ const Hero = () => {
               >
                 Expert consulting that drives real growth
               </h1>
-              <p className="font-inter text-[18px] lg:text-[19px] md:text-[17px] sm:text-[16px] font-normal text-white/80 leading-relaxed mb-5 md:mb-10 sm:mb-8 max-w-[520px]">
+              <p className="font-inter text-[18px] lg:text-[19px] md:text-[17px] sm:text-[16px] font-normal text-white/80 leading-relaxed mb-5 md:mb-7 sm:mb-8 max-w-[520px]">
                 Elevate your business with expert insights, tailored strategies,
                 and unwavering support designed
               </p>
               <div className="flex flex-wrap items-center gap-5">
                 <Link
                   href="#contact"
-                  className="bg-white text-[#1f514c] pl-3 pr-2 py-0.5 rounded-full text-[15px] font-semibold hover:bg-gray-100 transition-all duration-200 flex items-center gap-3 shadow-sm whitespace-nowrap group"
+                  className="bg-white text-black pl-3 pr-1 py-0.5 rounded-full text-[16px] font-semibold hover:bg-gray-100 transition-all duration-200 flex items-center gap-3 shadow-sm whitespace-nowrap group"
                 >
                   Get in touch
                   {/* Arrow animation: Two arrows for slide effect */}
-                  <span className="w-9 h-9 bg-[#1f514c] rounded-full flex items-center justify-center text-white overflow-hidden relative">
-                    <ArrowRight size={20} strokeWidth={2.5} className="transition-transform duration-300 group-hover:translate-x-6" />
-                    <ArrowRight size={20} strokeWidth={2.5} className="absolute -translate-x-6 transition-transform duration-300 group-hover:translate-x-0" />
+                  <span className="w-8 h-8 bg-[#1f514c] rounded-full flex items-center justify-center text-white overflow-hidden relative">
+                    <ArrowRight size={18} strokeWidth={2.5} className="transition-transform duration-300 group-hover:translate-x-6" />
+                    <ArrowRight size={18} strokeWidth={2.5} className="absolute -translate-x-6 transition-transform duration-300 group-hover:translate-x-0" />
                   </span>
                 </Link>
                 <Link

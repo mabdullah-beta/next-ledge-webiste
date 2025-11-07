@@ -27,7 +27,7 @@ export default function TestimonialSection() {
         {/* Author Info */}
         <div className="flex items-center justify-center gap-4">
           {/* Avatar */}
-          <div className="relative w-16 h-16 rounded-full overflow-hidden">
+          <div className="relative w-16 h-16 rounded-2xl overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop"
               alt="Muzamal Hussain"
@@ -42,10 +42,10 @@ export default function TestimonialSection() {
             <h3 className="text-xl font-semibold text-gray-900 mb-1">
               Muzamal Hussain
             </h3>
-            <div className="flex items-center gap-2 bg-[#f0ffe7]">
-              <span className="flex items-center gap-2 text-sm text-gray-700">
+            <div className="flex items-center gap-2 bg-[#f0ffe7] px-3 py-1 rounded-xl">
+              <span className="flex items-center gap-2 text-[10px] text-[#1f514c]">
                 
-                High conversion   <span className="mx-1">·</span> <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>2x sales
+                High conversion  <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>2x sales
               </span>
             </div>
           </div>

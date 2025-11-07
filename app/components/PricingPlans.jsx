@@ -87,12 +87,12 @@ export default function PricingPlans() {
                   </div>
 
                   {/* Description */}
-                  <p className=" text-gray-700 text-[18px] mb-5 leading-relaxed antialiased">
+                  <p className=" text-gray-700 text-[18px] mb-4 leading-relaxed antialiased">
                     {plan.description}
                   </p>
 
                   {/* Price */}
-                  <div className=" flex items-baseline mb-6">
+                  <div className=" flex items-baseline mb-4">
                     <span className="font-hedvig  text-[35px] md:text-[45px]  font-bold text-gray-900">
                       {plan.price}
                     </span>

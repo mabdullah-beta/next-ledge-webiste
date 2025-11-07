@@ -52,14 +52,14 @@ export default function HowItWorksSection() {
 
         {/* Steps with Timeline */}
         <div className="relative max-w-6xl mx-auto">
-          {/* Vertical Timeline Line */}
-          {/* Desktop: centered, Mobile: on the left at 30px */}
-          <div className="absolute left-[30px] md:left-1/2 top-0 bottom-0 w-px bg-gray-300 md:-translate-x-1/2"></div>
-
           {/* Steps */}
           <div className="space-y-24 md:space-y-32">
             {steps.map((step, index) => (
               <div key={step.id} className="relative">
+                {/* Timeline Line Segment - only between steps, not after the last one */}
+                {index < steps.length - 1 && (
+                  <div className="absolute left-[30px] md:left-1/2 top-[calc(50%+28px)] w-px h-[calc(100%+4.5rem)] md:h-[calc(100%+6.5rem)] bg-gray-300 md:-translate-x-1/2"></div>
+                )}
                 {/* Desktop Layout */}
                 <div className="hidden md:block">
                   {/* Number Badge on Timeline - Desktop */}

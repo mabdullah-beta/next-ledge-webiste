@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
@@ -85,26 +85,29 @@ export default function FAQSection() {
                   onClick={() => toggleItem(faq.id)}
                   className=" antialiased w-full flex items-center justify-between gap-2 text-left py-4 group"
                 >
-                  <h3 className=" md:text-base font-normal text-gray-900">
+                  <h3 className="antialiased  md:text-[18px] font-normal text-gray-900">
                     {faq.question}
                   </h3>
-                  <div className="flex-shrink-0 w-7 h-7 bg-teal-800 rounded-full flex items-center justify-center text-white">
-                    {isOpen ? (
-                      <ChevronUp className="w-4 h-4" strokeWidth={2} />
-                    ) : (
-                      <ChevronDown className="w-4 h-4" strokeWidth={2} />
-                    )}
+                  <div className="flex-shrink-0 w-6 h-6 bg-teal-800 rounded-full flex items-center justify-center text-white transition-transform duration-500">
+                    <ChevronDown
+                      className={`w-3 h-3 transition-transform duration-1000 ${isOpen ? 'rotate-180' : 'rotate-0'}`}
+                      strokeWidth={2}
+                    />
                   </div>
                 </button>
 
                 {/* Answer */}
-                {isOpen && (
-                  <div className="pb-6 pr-16 animate-fadeIn">
+                <div
+                  className={`overflow-hidden transition-all duration-1500 ease-in-out ${
+                    isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="pb-5 pr-12">
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
-                )}
+                </div>
               </div>
             );
           })}
