@@ -29,7 +29,7 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <section className="font-inter w-full bg-white py-20 md:py-20 sm:py-12 px-4">
+    <section className="tracking-tight font-inter w-full bg-white py-20 md:py-20 sm:py-12 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20 md:mb-20 sm:mb-12">
@@ -88,7 +88,7 @@ export default function HowItWorksSection() {
 
                         {/* Content on Right */}
                         <div className="pl-16">
-                          <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                          <h3 className="text-[28px] font-semibold text-gray-900 mb-6 tracking-tight">
                             {step.title}
                           </h3>
                           <p className="antialiased text-gray-700 text-base leading-relaxed mb-6">
@@ -104,7 +104,7 @@ export default function HowItWorksSection() {
                       <>
                         {/* Content on Left */}
                         <div className="pr-16 text-right">
-                          <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                          <h3 className="text-[28px] font-semibold text-gray-900 mb-6">
                             {step.title}
                           </h3>
                           <p className="antialiased text-base leading-relaxed mb-6 font-semibold text-[#636363]">
@@ -159,7 +159,7 @@ export default function HowItWorksSection() {
 
                   {/* Content Below Image - Mobile */}
                   <div>
-                    <h3 className="text-[24px] font-semibold text-gray-900 mb-3">
+                    <h3 className="text-[28px] font-semibold text-gray-900 mb-3">
                       {step.title}
                     </h3>
                     <p className="antialiased text-gray-600 text-base leading-relaxed mb-5">

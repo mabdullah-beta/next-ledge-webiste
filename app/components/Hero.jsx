@@ -10,7 +10,11 @@ const Hero = () => {
 
   // Effect: Trigger fade-in animation after component mounts
   useEffect(() => {
-    setIsVisible(true);
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 0);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
