@@ -47,7 +47,7 @@ export default function ContactSection() {
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Row 1: Full Name and Email */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-6">
                 <div>
                   <input
                     type="text"
@@ -73,7 +73,7 @@ export default function ContactSection() {
               </div>
 
               {/* Row 2: Date and Service */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-6">
                 <div>
                   <input
                     type="date"
@@ -166,7 +166,7 @@ export default function ContactSection() {
           </div>
 
           {/* Right Side - Image */}
-          <div className="relative h-full min-h-[600px] lg:min-h-[700px] rounded-3xl overflow-hidden w-[85%]">
+          <div className="relative h-full min-h-[600px] lg:min-h-[700px] rounded-3xl overflow-hidden md:w-[85%]">
             <Image
               src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&h=1000&fit=crop"
               alt="Person with headphones working on laptop"
