@@ -30,9 +30,10 @@ export default function ContactSection() {
   return (
     <section className="w-full bg-primary px-4 py-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-2 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-4 items-center">
+          
           {/* Left Side - Form */}
-          <div className='md:px-12 py-20  '>
+          <div className='md:px-12 py-20'>
             {/* Header */}
             <div className="mb-12">
               <div className="flex items-center gap-2 mb-6">

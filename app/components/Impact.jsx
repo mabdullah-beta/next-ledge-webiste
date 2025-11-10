@@ -35,7 +35,8 @@ export default function ImpactSection() {
         </div>
 
         {/* Stats with Image */}
-        <div className="relative max-w-5xl mx-auto mt-20 mr-12">
+        <div className="relative max-w-5xl mx-auto mt-20 mr-0 md:mr-28">
+          
           {/* Mobile Stats - Above Image - Animated */}
           <motion.div 
             className="lg:hidden mb-8 space-y-6 px-4"
@@ -100,7 +101,7 @@ export default function ImpactSection() {
 
           {/* Central Image - Animated first */}
           <motion.div 
-            className="relative w-[full] max-w-md mx-auto"
+            className="relative max-w-md mx-auto"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
