@@ -48,12 +48,11 @@ const Hero = () => {
               </div>
 
               <h1 className="font-hedvig text-[43px] lg:text-[49px] md:text-[48px] sm:text-[36px] font-normal text-white leading-[1.15] tracking-tight mb-4 md:mb-6 sm:mb-5">
-                Expert consulting that drives real growth
+                Modern accounting. Real insight. Future growth.
               </h1>
 
               <p className="font-inter text-[18px] lg:text-[19px] md:text-[17px] sm:text-[16px] font-normal text-white/80 leading-relaxed mb-5 md:mb-7 sm:mb-8 max-w-[520px]">
-                Elevate your business with expert insights, tailored strategies,
-                and unwavering support designed
+               Nexledge combines professional bookkeeping with smart IT solutions. We make your administration efficient, your numbers meaningful, and your business ready for what’s next.
               </p>
 
               <div className="flex flex-wrap items-center gap-5">
@@ -69,7 +68,7 @@ const Hero = () => {
                 </Link>
                 <Link
                   href="#services"
-                  className="font-inter bg-transparent text-white py-3.5 rounded-full text-lg font-semibold hover:bg-white/10 transition-all duration-200 border border-transparent whitespace-nowrap"
+                  className="font-inter bg-transparent px-5 text-white py-2 rounded-full text-lg font-semibold hover:bg-white/10 transition-all duration-200 border border-transparent whitespace-nowrap"
                 >
                   What we do
                 </Link>

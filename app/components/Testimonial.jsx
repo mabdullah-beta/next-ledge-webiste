@@ -13,6 +13,7 @@ export default function TestimonialSection() {
     <section 
       ref={sectionRef}
       className="font-hedvig w-full bg-white py-20 md:px-8 px-2"
+      id="testimonial"
     >
       <div className="max-w-2xl mx-auto text-center">
         {/* Star Rating - Animates first */}
@@ -37,7 +38,7 @@ export default function TestimonialSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
         >
-          Startex revolutionized our customer
+          Nextledge revolutionized our customer
           understanding, boosting retention like
           never before.
         </motion.h2>

@@ -67,7 +67,8 @@ export default function Slider() {
   const cards = getVisibleCards();
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-12 md:py-12 sm:py-8">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-12 md:py-12 sm:py-8" id="services">
+
       {/* Header */}
       <div className="text-center mb-16 md:mb-16 sm:mb-10">
         <div className="flex items-center justify-center gap-2 mb-6 md:mb-6 sm:mb-4">

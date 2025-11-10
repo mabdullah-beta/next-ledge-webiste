@@ -33,18 +33,20 @@ const Header = () => {
         <nav className="h-20 md:h-20 sm:h-[70px] px-0 md:px-12 sm:px-5 flex items-center justify-between">
           
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group" aria-label="Stratex Home">
-            <div className="w-8 h-8 bg-primary rounded-xl flex items-center justify-center transition-transform duration-200 group-hover:scale-105">
-              <Image src="/next-ledge.png" alt="Stratex Logo" width={35} height={35} />
+          <Link href="/" className="flex cursor-pointer items-center gap-3 group" aria-label="Stratex Home">
+
+            <div className="w-10 bg-primary/10 rounded-lg h-10 flex items-center justify-center transition-transform duration-200 group-hover:scale-105">
+              <Image src="/next-ledge.png" alt="Stratex Logo" width={45} height={45} />
             </div>
-            <span className="text-[22px] md:text-[22px] sm:text-[20px] font-normal text-heading tracking-tight transition-opacity duration-200 group-hover:opacity-80" style={{ fontFamily: "serif" }}>
+            <span className="text-[22px] font-hedvig md:text-[22px] sm:text-[20px] font-normal text-heading tracking-tight transition-opacity duration-200 group-hover:opacity-80">
               Nexledge
             </span>
           </Link>
 
+
           {/* Desktop Navigation - Centered between logo and button */}
           <div className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2">
-            <ul className=" front-inter flex items-center gap-9" role="navigation">
+            <ul className="font-inter flex items-center gap-6" role="navigation">
               {navItems.map((item) => (
                 <li key={item.label}>
                   <Link href={item.href} className="text-[16px]  font-inter font-medium text-heading hover:opacity-60 transition-opacity duration-200">

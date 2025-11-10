@@ -50,7 +50,7 @@ export default function PricingPlans() {
   const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   return (
-    <section ref={sectionRef} className="w-full bg-white py-20 px-4">
+    <section ref={sectionRef} className="w-full bg-white py-20 px-4" id="pricing">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="font-hedvig text-center mb-16">
