@@ -60,8 +60,8 @@ const Comparison = () => {
         </div>
 
         {/* Comparison Grid - Slower animation with strong easeOut */}
-        <motion.div 
-          className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-0 bg-gradient-to-b from-mint-lightest to-mint-lighter border-2 border-border-mint rounded-3xl overflow-hidden p-1.5"
+        <motion.div
+          className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-0 bg-gradient-to-b from-primary/5 to-primary/10 border-2 border-primary/20 rounded-3xl overflow-hidden p-1.5"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
           transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}

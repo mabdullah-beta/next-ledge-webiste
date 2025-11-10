@@ -191,7 +191,7 @@ export default function Slider() {
           {/* Navigation Buttons - Desktop */}
           <button
             onClick={handlePrevious}
-            className="absolute left-[calc(50%-290px)] z-40 w-10 h-10 bg-secondary-light hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110"
+            className="absolute left-[calc(50%-290px)] z-40 w-10 h-10 bg-primary  text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110"
             aria-label="Previous slide"
           >
             <ArrowLeft className="w-6 h-6" />
@@ -199,7 +199,7 @@ export default function Slider() {
 
           <button
             onClick={handleNext}
-            className="absolute right-[calc(50%-290px)] z-40 w-10 h-10 bg-secondary-light hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110"
+            className="absolute right-[calc(50%-290px)] z-40 w-10 h-10 bg-primary  text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110"
             aria-label="Next slide"
           >
             <ArrowRight size={20} strokeWidth={2.5} />
@@ -240,7 +240,7 @@ export default function Slider() {
           {/* Mobile Navigation Buttons - At the edges */}
           <button
             onClick={handlePrevious}
-            className="absolute -left-4 top-1/2 -translate-y-1/2 z-40 w-10 h-10 bg-secondary-light hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 active:scale-95"
+            className="absolute -left-4 top-1/2 -translate-y-1/2 z-40 w-10 h-10 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 active:scale-95"
             aria-label="Previous slide"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -248,7 +248,7 @@ export default function Slider() {
 
           <button
             onClick={handleNext}
-            className="absolute -right-4 top-1/2 -translate-y-1/2 z-40 w-10 h-10 bg-secondary-light hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 active:scale-95"
+            className="absolute -right-4 top-1/2 -translate-y-1/2 z-40 w-10 h-10 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 active:scale-95"
             aria-label="Next slide"
           >
             <ArrowRight className="w-5 h-5" strokeWidth={2.5} />
@@ -263,7 +263,7 @@ export default function Slider() {
               onClick={() => setCurrentIndex(index)}
               className={`h-2 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? 'w-8 bg-secondary-light'
+                  ? 'w-8 bg-primary'
                   : 'w-2 bg-gray-300'
               }`}
               aria-label={`Go to slide ${index + 1}`}

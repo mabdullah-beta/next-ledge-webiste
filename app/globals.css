@@ -19,31 +19,17 @@
   --font-size-xs: 10px;                /* Badges, micro text */
 
   /* Primary Brand Colors - Use as: bg-primary, text-primary, border-primary */
-  --color-primary: #1f514c;
-  --color-primary-dark: #17423d;
-  --color-primary-light: #2a5a55;
+  --color-primary: #1E3A8A;
+  --color-primary-light: #3B82F6;
 
-  /* Secondary Colors - Use as: bg-secondary, text-secondary, etc */
-  --color-secondary-light: rgb(15 118 110); /* teal-700 equivalent */
-  --color-secondary: rgb(17 94 89); /* teal-800 equivalent */
-  --color-secondary-dark: rgb(19 78 74); /* teal-900 equivalent */
+
+
 
   /* Text Colors - Use as: text-heading, text-body */
   --color-heading: #1a1a1a;
   --color-body: #636363;
 
-  /* Background Colors - Use as: bg-mint-lightest, bg-mint-lighter, etc */
-  --color-mint-lightest: #fefffd;
-  --color-mint-lighter: #f5fef0;
-  --color-mint-light: #eeffe5;
-  --color-mint: #f0ffe7;
-  --color-cream: #fcfffb;
-  --color-cream-light: #efffe5;
-  --color-gray-light: #fafafa;
-  --color-gray: #f5f5f5;
-
-  /* Border Colors - Use as: border-mint */
-  --color-border-mint: #e8f5e0;
+ 
 
   /* Component Sizes - Use as: icon-sm, icon-md, icon-lg, dot-indicator */
   --size-dot-indicator: 0.5rem;   /* 8px - Section label dots */

@@ -125,16 +125,16 @@ export default function Footer() {
           {/* Logo and Description */}
           <div>
             <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                <Image
-                  src="https://framerusercontent.com/images/AUOOfMLqx3UrCzpH7eIka9rF8.svg"
+              <div className="w-8 h-8 bg-primary rounded-xl flex items-center justify-center">
+                 <Image
+                  src="/next-ledge.png"
                   alt="Stratex Logo"
-                  width={20}
-                  height={20}
+                  width={28}
+                  height={28}
                 />
               </div>
               <span className="text-[26px] font-normal text-heading tracking-tight" style={{ fontFamily: 'serif' }}>
-                Stratex
+                Nexledge
               </span>
             </Link>
 

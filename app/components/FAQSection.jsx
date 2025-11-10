@@ -63,7 +63,7 @@ function FAQItem({ faq, index, isOpen, toggleItem }) {
         <h3 className="antialiased md:text-lg font-normal text-gray-900">
           {faq.question}
         </h3>
-        <div className="flex-shrink-0 w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-white transition-transform duration-500">
+        <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white transition-transform duration-500">
           <ChevronDown
             className={`w-3 h-3 transition-transform duration-1000 ${
               isOpen ? "rotate-180" : "rotate-0"
@@ -106,8 +106,8 @@ export default function FAQSection() {
         {/* Header */}
         <div className="font-hedvig text-center mb-16 md:mb-16 sm:mb-12">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="dot-indicator bg-secondary-light rounded-full"></div>
-            <span className="font-inter text-sm font-medium text-primary">
+            <div className="dot-indicator bg-primary rounded-full"></div>
+            <span className=" text-base font-semimedium text-primary">
               FAQ
             </span>
           </div>

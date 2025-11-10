@@ -23,8 +23,8 @@ export default function ImpactSection() {
         {/* Header */}
         <div className="font-hedvig text-center mb-16 md:mb-16 sm:mb-12">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="dot-indicator bg-secondary-light rounded-full"></div>
-            <span className="font-inter text-sm font-medium text-primary">impact</span>
+            <div className="dot-indicator bg-primary rounded-full"></div>
+            <span className="font-inter text-base font-semimedium text-primary">impact</span>
           </div>
           <h2 className="font-hedvig text-heading-lg leading-tight text-gray-900 mx-auto max-w-2xl mb-5">
             Real results that drive lasting impact for everyone
@@ -47,14 +47,14 @@ export default function ImpactSection() {
             <div className="grid grid-cols-2 gap-8">
               {/* $7M+ Revenue */}
               <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                <div className="bg-secondary text-white px-2 py-1 rounded-full">
+                <div className="bg-primary text-white px-2 py-1 rounded-full">
                   <span className="font-bold text-base">$7M+</span>
                 </div>
                 <span className="text-gray-900 font-medium text-base">Revenue</span>
               </div>
               {/* 78% Impact */}
               <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                <div className="bg-secondary text-white px-3 py-1 rounded-full">
+                <div className="bg-primary text-white px-3 py-1 rounded-full">
                   <span className="font-bold text-base">78%</span>
                 </div>
                 <span className="text-gray-900 font-medium text-base">Impact</span>
@@ -65,14 +65,14 @@ export default function ImpactSection() {
             <div className="grid grid-cols-2 gap-8">
               {/* 72% Growth */}
               <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                <div className="bg-secondary text-white px-3 py-1 rounded-full">
+                <div className="bg-primary text-white px-3 py-1 rounded-full">
                   <span className="font-bold text-base">72%</span>
                 </div>
                 <span className="text-gray-900 font-medium text-base">Growth</span>
               </div>
               {/* 1% Designers */}
               <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                <div className="bg-secondary text-white px-3 py-1 rounded-full">
+                <div className="bg-primary text-white px-3 py-1 rounded-full">
                   <span className="font-bold text-base">1%</span>
                 </div>
                 <span className="text-gray-900 font-medium text-base">Designers</span>
@@ -83,14 +83,14 @@ export default function ImpactSection() {
             <div className="grid grid-cols-2 gap-8">
               {/* 65% Skills */}
               <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                <div className="bg-secondary text-white px-3 py-1 rounded-full">
+                <div className="bg-primary text-white px-3 py-1 rounded-full">
                   <span className="font-bold text-base">65%</span>
                 </div>
                 <span className="text-gray-900 font-medium text-base">Skills</span>
               </div>
               {/* 10+ Consultants */}
               <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                <div className="bg-secondary text-white px-3 py-1 rounded-full">
+                <div className="bg-primary text-white px-3 py-1 rounded-full">
                   <span className="font-bold text-base">10+</span>
                 </div>
                 <span className="text-gray-900 font-medium text-base">Consultants</span>
@@ -129,7 +129,7 @@ export default function ImpactSection() {
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
               >
                 <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                  <div className="bg-secondary rounded-full px-3 py-1">
+                  <div className="bg-primary rounded-full px-3 py-1">
                     <span className="text-white font-bold text-base">$7M+</span>
                   </div>
                   <span className="text-black font-medium text-base">Revenue</span>
@@ -146,7 +146,7 @@ export default function ImpactSection() {
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
               >
                 <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                  <div className="bg-secondary rounded-full px-3 py-1">
+                  <div className="bg-primary rounded-full px-3 py-1">
                     <span className="text-white font-bold text-base">72%</span>
                   </div>
                   <span className="text-black font-medium text-base">Growth</span>
@@ -163,7 +163,7 @@ export default function ImpactSection() {
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
               >
                 <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                  <div className="bg-secondary rounded-full px-3 py-1">
+                  <div className="bg-primary rounded-full px-3 py-1">
                     <span className="text-white font-bold text-base">65%</span>
                   </div>
                   <span className="text-black font-medium text-base">Skills</span>
@@ -187,7 +187,7 @@ export default function ImpactSection() {
                 {/* Connecting Line */}
                 <div className="w-32 h-px bg-gray-300"></div>
                 <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                  <div className="bg-secondary rounded-full px-3 py-1">
+                  <div className="bg-primary rounded-full px-3 py-1">
                     <span className="text-white font-bold text-base">78%</span>
                   </div>
                   <span className="text-black font-medium text-base">Impact</span>
@@ -204,7 +204,7 @@ export default function ImpactSection() {
                 {/* Connecting Line */}
                 <div className="w-28 h-px bg-gray-300"></div>
                 <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                   <div className="bg-secondary rounded-full px-3 py-1">
+                   <div className="bg-primary rounded-full px-3 py-1">
                     <span className="text-white font-bold text-base">1%</span>
                   </div>
                   <span className="text-black font-medium text-base">Designers</span>
@@ -221,7 +221,7 @@ export default function ImpactSection() {
                 {/* Connecting Line */}
                 <div className="w-20 h-px bg-gray-300"></div>
                 <div className="flex items-center gap-2 bg-gray-light rounded-full px-3 py-1 ">
-                   <div className="bg-secondary rounded-full px-3 py-1">
+                   <div className="bg-primary rounded-full px-3 py-1">
                     <span className="text-white font-bold text-base">10+</span>
                   </div>
                   <span className="text-black font-medium text-base">Consultants</span>

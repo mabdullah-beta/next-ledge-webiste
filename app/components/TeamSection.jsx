@@ -126,8 +126,8 @@ export default function TeamSection() {
         {/* Header */}
         <div className="font-hedvig text-center mb-16 md:mb-16 sm:mb-12">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="dot-indicator bg-secondary-light rounded-full"></div>
-            <span className="font-inter text-sm font-medium text-primary">our team</span>
+            <div className="dot-indicator bg-primary rounded-full"></div>
+            <span className=" text-base font-semimedium text-primary">our team</span>
           </div>
           <h2 className="font-hedvig text-heading-lg leading-tight text-gray-900 mx-auto max-w-2xl mb-5 px-4">
             Meet the experts behind your business success
@@ -192,7 +192,7 @@ export default function TeamSection() {
           <button
             onClick={handlePrevious}
             disabled={currentIndex === 0}
-            className="w-10 h-10 lg:w-10 lg:h-10 bg-secondary hover:bg-secondary-dark text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed active:scale-95"
+            className="w-10 h-10 lg:w-10 lg:h-10 bg-primary text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed active:scale-95"
             aria-label="Previous member"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -201,7 +201,7 @@ export default function TeamSection() {
           <button
             onClick={handleNext}
             disabled={currentIndex === maxIndex}
-            className="w-10 h-10 lg:w-10 lg:h-10 bg-secondary hover:bg-secondary-dark text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed active:scale-95"
+            className="w-10 h-10 lg:w-10 lg:h-10 bg-primary text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed active:scale-95"
             aria-label="Next member"
           >
             <ArrowRight className="w-5 h-5" />

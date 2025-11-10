@@ -60,8 +60,8 @@ export default function KeyBenefits() {
         {/* Header - No animation */}
         <div className="font-hedvig text-center mb-20">
           <div className="flex items-center justify-center gap-2 mb-6">
-            <div className="dot-indicator bg-secondary-light rounded-full"></div>
-            <span className="text-sm font-medium text-gray-600">Features</span>
+            <div className="dot-indicator bg-primary rounded-full"></div>
+            <span className="font-inter text-base font-semimedium text-primary">Features</span>
           </div>
           <h2 className="font-hedvig max-w-2xl text-heading-lg text-gray-900 leading-tight mx-auto">
             Key benefits that set us apart from other ferns
@@ -90,7 +90,7 @@ export default function KeyBenefits() {
                   }}
                 >
                   {/* Icon */}
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-secondary rounded-2xl mb-6">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-primary rounded-2xl mb-6">
                     <Icon className="w-6 h-6 text-white" strokeWidth={1.5} />
                   </div>
 
@@ -128,7 +128,7 @@ export default function KeyBenefits() {
                   }}
                 >
                   {/* Icon */}
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-secondary rounded-2xl mb-6">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-primary rounded-2xl mb-6">
                     <Icon className="w-6 h-6 text-white" strokeWidth={1.5} />
                   </div>
 

@@ -22,7 +22,6 @@ function Main() {
       <Comparison/>
       <Slider/>
       <TestimonialSection/>
-
       <KeyBenefits/>
       <PricingPlans/>
       <HowItWorksSection/>

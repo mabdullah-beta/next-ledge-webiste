@@ -30,7 +30,7 @@ const pricingPlans = [
     price: '$299',
     period: '/Month',
     buttonText: 'Get Started',
-    buttonStyle: 'bg-secondary text-white hover:bg-secondary-dark',
+    buttonStyle: 'bg-primary text-white hover:bg-secondary-dark',
     bgColorHeader: 'bg-mint-light',
     bgColorFeatures: '#ffffff',
     isPopular: true,
@@ -55,8 +55,8 @@ export default function PricingPlans() {
         {/* Header */}
         <div className="font-hedvig text-center mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="dot-indicator bg-secondary-light rounded-full"></div>
-            <span className="text-sm font-medium text-gray-600">Pricing</span>
+            <div className="dot-indicator bg-primary rounded-full"></div>
+            <span className="text-base font-medium text-primary">Pricing</span>
           </div>
           <h2 className="font-hedvig text-heading-lg text-gray-900 mx-auto max-w-2xl">
             Flexible pricing tailored to your business needs
@@ -81,7 +81,7 @@ export default function PricingPlans() {
               <div
                 className={`rounded-3xl overflow-hidden shadow-lg border border-gray-200 ${
                   plan.id === 'premium'
-                    ? 'bg-gradient-to-b from-mint-light to-white'
+                    ? 'bg-gradient-to-b from-primary/10 to-white'
                     : plan.bgColor
                 }`}
               >
@@ -93,7 +93,7 @@ export default function PricingPlans() {
                       {plan.name}
                     </h3>
                     {plan.isPopular && (
-                      <span className="inline-flex items-center gap-1 px-3 py-1 bg-secondary text-white text-xs font-medium rounded-full">
+                      <span className="inline-flex items-center gap-1 px-3 py-1 bg-primary text-white text-xs font-medium rounded-full">
                         <Sparkles className="w-3 h-3" />
                         Popular
                       </span>
