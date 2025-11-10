@@ -11,6 +11,7 @@ import TeamSection from "./components/Team";
 import FAQSection from "./components/FAQ";
 import ContactSection from "./components/Contact";
 import Footer from "./components/Footer";
+import FlowchartSection from "./components/Flowchart";
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <HowItWorksSection/>
       <ImpactSection/>
       <TeamSection/>
+      <FlowchartSection/>
       <FAQSection/>
       <ContactSection/>
       <Footer/>

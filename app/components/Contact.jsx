@@ -45,7 +45,7 @@ export default function ContactSection() {
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 font-inter">
               {/* Row 1: Full Name and Email */}
               <div className="grid grid-cols-2 gap-6">
                 <div>
@@ -55,7 +55,7 @@ export default function ContactSection() {
                     placeholder="Full Name"
                     value={formData.fullName}
                     onChange={handleChange}
-                     className="w-full bg-primary-light rounded-2xl px-6 py-3 text-white placeholder-white focus:outline-none  focus:-white transition-colors"
+                     className="w-full bg-primary-light/30 rounded-2xl px-6 py-3 text-white placeholder-white focus:outline focus:outline-white transition-colors"
                     required
                   />
                 </div>
@@ -66,7 +66,7 @@ export default function ContactSection() {
                     placeholder="Email Address"
                     value={formData.email}
                     onChange={handleChange}
-                  className="w-full bg-primary-light  rounded-2xl px-6 py-3 text-white placeholder-white focus:outline-none  focus:-white transition-colors"
+                  className="w-full bg-primary-light/30  rounded-2xl px-6 py-3 text-white placeholder-white focus:outline focus:outline-white transition-colors"
                     required
                   />
                 </div>
@@ -81,7 +81,7 @@ export default function ContactSection() {
                     placeholder="dd/mm/yyyy"
                     value={formData.date}
                     onChange={handleChange}
-                     className="w-full bg-primary-light  rounded-2xl px-4 py-3 text-white placeholder-white focus:outline-none  focus:-white transition-colors font-medium"
+                     className="w-full bg-primary-light/30  rounded-2xl px-4 py-3 text-white placeholder-white focus:outline focus:outline-white transition-colors font-medium"
                     style={{ colorScheme: 'dark' }}
                     required
                   />
@@ -91,7 +91,7 @@ export default function ContactSection() {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full bg-primary-light  rounded-2xl px-4 py-3 text-white focus:outline-none  focus:-white transition-colors  font-medium appearance-none"
+                    className="w-full bg-primary-light/30  rounded-2xl px-4 py-3 text-white focus:outline focus:outline-white transition-colors  font-medium appearance-none"
                     style={{
                       color: '#ffffff',
                       backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")`,
@@ -118,7 +118,7 @@ export default function ContactSection() {
                   name="budget"
                   value={formData.budget}
                   onChange={handleChange}
-                  className="w-full bg-primary-light  rounded-2xl px-4 py-3 text-white focus:outline-none  focus:-white transition-colors  font-medium appearance-none"
+                  className="w-full bg-primary-light/30  rounded-2xl px-4 py-3 text-white focus:outline focus:outline-white transition-colors  font-medium appearance-none"
                   style={{
                     color: '#ffffff',
                     backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")`,
@@ -146,7 +146,7 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={handleChange}
                   rows="5"
-                  className="w-full bg-primary-light   rounded-2xl px-6 py-4 text-white placeholder-white focus:outline-none focus:-white transition-colors resize-none"
+                  className="w-full bg-primary-light/30   rounded-2xl px-6 py-4 text-white placeholder-white focus:outline focus:outline-white transition-colors resize-none"
                 ></textarea>
               </div>
 
@@ -154,7 +154,7 @@ export default function ContactSection() {
               <div>
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-3 bg-primary-light text-white font-semibold pl-6 pr-2 py-2 rounded-full hover:bg-secondary-dark transition-colors text-base"
+                  className="inline-flex cursor-pointer items-center gap-3 bg-primary-light/30 text-white font-semibold pl-6 pr-2 py-2 rounded-full hover:bg-secondary-dark transition-colors text-base"
                 >
                   <span>Submit your Form</span>
                   <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-primary">
