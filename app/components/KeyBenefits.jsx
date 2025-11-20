@@ -8,38 +8,38 @@ const benefits = [
   {
     id: 1,
     icon: MessageCircle,
-    title: 'Unlimited consultations',
-    description: 'Schedule as many strategy sessions as needed to your business'
+    title: 'Flexible consultations',
+    description: 'Easy access to administrative support whenever you need clarity or guidance.'
   },
   {
     id: 2,
     icon: Cloud,
-    title: 'Tailored solutions',
-    description: 'Get customized strategies designed to with your unique goals'
+    title: 'Tailored administrative solutions',
+    description: 'Workflows and setups adapted to your business needs, from day-to-day bookkeeping to structured financial processes.'
   },
   {
     id: 3,
     icon: Globe,
-    title: 'Expert insights',
-    description: 'Leverage industry-leading expertise to drive informed decisions'
+    title: 'Practical financial insights',
+    description: 'Clear explanations and organized overviews that help you understand your numbers and stay in control.'
   },
   {
     id: 4,
     icon: Database,
-    title: 'Data strategies',
-    description: 'Make confident moves with insights backed by research & analytics.'
+    title: 'Data & control strategies',
+    description: 'Well-structured reporting that supports better oversight and helps you make informed decisions.'
   },
   {
     id: 5,
     icon: Headphones,
-    title: 'Ongoing support',
-    description: 'Stay ahead with continuous guidance and recommendation'
+    title: 'Ongoing administrative support',
+    description: 'Consistent follow-up and communication throughout the year, so your administration remains organized and up-to-date.'
   },
   {
     id: 6,
     icon: Zap,
-    title: 'Seamless execution',
-    description: 'From planning to implementation, we ensure a smooth & process'
+    title: 'Efficient automation & IT support',
+    description: 'Implementation of useful tools and automations that help streamline your administrative work and reduce manual tasks.'
   }
 ];
 
@@ -50,7 +50,7 @@ const secondRow = benefits.slice(3, 6);
 export default function KeyBenefits() {
   const firstRowRef = useRef(null);
   const secondRowRef = useRef(null);
-  
+
   const isFirstRowInView = useInView(firstRowRef, { once: true, amount: 0.3 });
   const isSecondRowInView = useInView(secondRowRef, { once: true, amount: 0.3 });
 
@@ -71,20 +71,20 @@ export default function KeyBenefits() {
         {/* Benefits Grid */}
         <div className="font-inter max-w-6xl mx-auto space-y-16">
           {/* First Row - Elements render left to right */}
-          <div 
+          <div
             ref={firstRowRef}
             className="grid grid-cols-1 md:grid-cols-3 gap-x-0 gap-y-16"
           >
             {firstRow.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
-                <motion.div 
-                  key={benefit.id} 
+                <motion.div
+                  key={benefit.id}
                   className="text-center"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={isFirstRowInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-                  transition={{ 
-                    duration: 0.4, 
+                  transition={{
+                    duration: 0.4,
                     ease: "easeOut",
                     delay: index * 0.1
                   }}
@@ -109,20 +109,20 @@ export default function KeyBenefits() {
           </div>
 
           {/* Second Row - Elements render left to right */}
-          <div 
+          <div
             ref={secondRowRef}
             className="grid grid-cols-1 md:grid-cols-3 gap-x-0 gap-y-16"
           >
             {secondRow.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
-                <motion.div 
-                  key={benefit.id} 
+                <motion.div
+                  key={benefit.id}
                   className="text-center"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={isSecondRowInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-                  transition={{ 
-                    duration: 0.4, 
+                  transition={{
+                    duration: 0.4,
                     ease: "easeOut",
                     delay: index * 0.1
                   }}

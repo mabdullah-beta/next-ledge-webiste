@@ -8,24 +8,34 @@ import { useRef } from 'react';
 const steps = [
   {
     id: '01',
-    title: 'Simple Booking',
-    description: 'Effortlessly schedule a consultation to discuss your business needs and challenges. We streamline the process to get started quickly.',
+    title: 'Simple & efficient',
+    abt: 'Easy and seamless scheduling',
+    description: 'Effortlessly schedule a consultation to discuss your goals, needs, and challenges. We listen, analyze your situation, and identify where automation and optimization can make the biggest impact—so we can start quickly and effectively.',
     image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop',
     imagePosition: 'left' // Image on left, content on right
   },
   {
     id: '02',
-    title: 'Tailored Strategy',
-    description: 'We analyze your goals and create a customized strategy designed to drive measurable success for your business needs and exploring more ideas.',
+    title: 'Automating where it matters',
+    abt: 'Less manual work, more clarity',
+    description: 'Automation doesn’t mean losing the human touch. We stay closely involved, provide proactive advice, and think along with you during important decisions. You’ll have a dedicated expert who truly understands your business.',
     image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop',
     imagePosition: 'right' // Content on left, image on right
   },
   {
     id: '03',
-    title: 'Continuous Support',
+    title: 'Personal guidance',
+    abt: 'Always an expert by your side',
     description: 'From implementation to optimization, we provide ongoing guidance and adjustments to ensure long-term growth for you',
     image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop',
     imagePosition: 'left' // Image on left, content on right
+  }, {
+    id: '04',
+    title: 'Growing with confidence',
+    abt: 'Turning numbers into strategy',
+    description: 'With clear numbers and smart financial insights, we help you make confident, strategic decisions. Whether you want to scale, invest, or improve efficiency, Nexledge gives you the clarity to move forward.',
+    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imagePosition: 'right' // Image on left, content on right
   }
 ];
 
@@ -39,7 +49,7 @@ function StepItem({ step, index }) {
       {index < steps.length - 1 && (
         <div className="absolute left-[30px] md:left-1/2 top-[calc(50%+28px)] w-px h-[calc(100%+4.5rem)] md:h-[calc(100%+6.5rem)] bg-gray-300 md:-translate-x-1/2"></div>
       )}
-      
+
       {/* Desktop Layout */}
       <div className="hidden md:block">
         {/* Number Badge on Timeline - Desktop */}
@@ -54,7 +64,7 @@ function StepItem({ step, index }) {
           {step.imagePosition === 'left' ? (
             <>
               {/* Image on Left - Animated */}
-              <motion.div 
+              <motion.div
                 className="pr-12"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
@@ -72,7 +82,7 @@ function StepItem({ step, index }) {
               </motion.div>
 
               {/* Content on Right - Animated */}
-              <motion.div 
+              <motion.div
                 className="pl-16"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
@@ -81,6 +91,9 @@ function StepItem({ step, index }) {
                 <h3 className="text-[28px] font-semibold text-gray-900 mb-6 tracking-tight">
                   {step.title}
                 </h3>
+                <h4 className='text-[17px] font-semibold text-gray-900 mb-6 tracking-tight'>
+                  {step.abt}
+                </h4>
                 <p className="antialiased text-gray-700 text-base leading-relaxed mb-6">
                   {step.description}
                 </p>
@@ -93,7 +106,7 @@ function StepItem({ step, index }) {
           ) : (
             <>
               {/* Content on Left - Animated */}
-              <motion.div 
+              <motion.div
                 className="pr-16 text-right"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
@@ -102,6 +115,9 @@ function StepItem({ step, index }) {
                 <h3 className="text-[28px] font-semibold text-gray-900 mb-6">
                   {step.title}
                 </h3>
+                <h4 className='text-[17px] font-semibold text-gray-900 mb-6 tracking-tight'>
+                  {step.abt}
+                </h4>
                 <p className="antialiased text-base leading-relaxed mb-6 font-semibold text-body">
                   {step.description}
                 </p>
@@ -114,7 +130,7 @@ function StepItem({ step, index }) {
               </motion.div>
 
               {/* Image on Right - Animated */}
-              <motion.div 
+              <motion.div
                 className="pl-12"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
@@ -145,7 +161,7 @@ function StepItem({ step, index }) {
         </div>
 
         {/* Image First - Mobile - Animated */}
-        <motion.div 
+        <motion.div
           className="mb-8 mt-16"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}

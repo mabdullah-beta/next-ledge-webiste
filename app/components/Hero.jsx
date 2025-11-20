@@ -10,6 +10,7 @@ const Hero = () => {
 
   useEffect(() => {
     // Trigger animation immediately after mount
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsLoaded(true);
   }, []);
 
@@ -22,9 +23,9 @@ const Hero = () => {
         {/* Background container - loads immediately */}
         <div className="relative bg-primary rounded-4xl md:rounded-4xl sm:rounded-3xl overflow-hidden">
           <div className="grid lg:grid-cols-2 gap-0 items-center min-h-[600px] md:min-h-[600px] sm:min-h-auto">
-            
+
             {/* Left Content - Scale up animation */}
-            <motion.div 
+            <motion.div
               className="px-6 py-0 md:px-12 md:py-20 flex flex-col justify-center z-10"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={isLoaded ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
@@ -52,7 +53,7 @@ const Hero = () => {
               </h1>
 
               <p className="font-inter text-[18px] lg:text-[19px] md:text-[17px] sm:text-[16px] font-normal text-white/80 leading-relaxed mb-5 md:mb-7 sm:mb-8 max-w-[520px]">
-               Nexledge combines professional bookkeeping with smart IT solutions. We make your administration efficient, your numbers meaningful, and your business ready for what’s next.
+                Nexledge combines professional bookkeeping with smart IT solutions. We make your administration efficient, your numbers meaningful, and your business ready for what’s next.
               </p>
 
               <div className="flex flex-wrap items-center gap-5">
@@ -76,20 +77,20 @@ const Hero = () => {
             </motion.div>
 
             {/* Right Image - Scale up animation */}
-            <motion.div 
+            <motion.div
               className="relative h-full min-h-[600px] md:min-h-[600px] sm:min-h-[400px] lg:block sm:block p-5 md:p-6 sm:p-4 flex justify-end items-center"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={isLoaded ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2, ease: "easeOut", delay: 0.10 }}
             >
               <div className="relative w-full md:w-[80%] h-full rounded-3xl md:rounded-3xl sm:rounded-2xl overflow-hidden ml-auto">
-                <Image 
-                  src="https://framerusercontent.com/images/wHPEsYa9YHcGTTHOJvS0mO9XY.jpg" 
-                  alt="Business consulting professional" 
-                  fill 
-                  priority 
-                  className="object-cover object-center" 
-                  sizes="(max-width: 768px) 100vw, 50vw" 
+                <Image
+                  src="/image.png"
+                  alt="Business consulting professional"
+                  fill
+                  priority
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </motion.div>

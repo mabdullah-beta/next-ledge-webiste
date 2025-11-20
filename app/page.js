@@ -7,7 +7,7 @@ import KeyBenefits from "./components/KeyBenefits";
 import PricingPlans from "./components/Pricing";
 import HowItWorksSection from "./components/HowItWorks";
 import ImpactSection from "./components/Impact";
-import TeamSection from "./components/Team";
+// import TeamSection from "./components/Team";
 import FAQSection from "./components/FAQ";
 import ContactSection from "./components/Contact";
 import Footer from "./components/Footer";
@@ -16,21 +16,21 @@ import FlowchartSection from "./components/Flowchart";
 
 export default function Home() {
   return (
-  <div className="overflow-x-hidden w-full">
-      <Header/>
-      <Hero/>
-      <Comparison/>
-      <Slider/>
-      <TestimonialSection/>
-      <KeyBenefits/>
+    <div className="overflow-x-hidden w-full">
+      <Header />
+      <Hero />
+      <Comparison />
+      <Slider />
+      <TestimonialSection />
+      <KeyBenefits />
       {/* <PricingPlans/> */}
-      <HowItWorksSection/>
-      <ImpactSection/>
-      <TeamSection/>
-      <FlowchartSection/>
-      <FAQSection/>
-      <ContactSection/>
-      <Footer/>
+      <HowItWorksSection />
+      <ImpactSection />
+      {/* <TeamSection /> */}
+      <FlowchartSection />
+      <FAQSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
